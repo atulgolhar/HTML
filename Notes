@@ -17,6 +17,9 @@ google web fonts (fonts.google.com)
 // font size
 type-scale.com
 
+
+# IMAGES
+
 // vector icons (in PNG, SVG, EPS, PSD, and BASE 54 formats)
 flaticon.com
 
@@ -46,6 +49,9 @@ fontawesome.com
 
 // styling forms
 
+
+# FORMS
+
 // CSS Frameworks
 Bootstrap - full css framework
 Foundation
@@ -53,3 +59,5 @@ Semantic UI
 UI Kit
 Materialize
 Milligram - minimalist css framework
+
+google: html input element --> developer.mozilla.org > Form Input element references
