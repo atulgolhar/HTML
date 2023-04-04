@@ -65,3 +65,6 @@ google: html datalist element --> developer.mozilla.org > HTML Data List element
 
 // submitting forms
 formspree.io (google it)
+
+// transitions
+cubic.bezier.com - custom geometric transitions using bezier curves (linear vs bezier curves)
