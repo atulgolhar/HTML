@@ -76,3 +76,6 @@ animate.style
 // animations when scrolling down
 aos animation (google it)
 https://github.com/michalsnik/aos
+
+// HTML Validation
+https://validator.w3.org/
