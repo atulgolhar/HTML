@@ -77,5 +77,6 @@ animate.style
 aos animation (google it)
 https://github.com/michalsnik/aos
 
-// HTML Validation
+// HTML and CSS Validation
 https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
