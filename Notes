@@ -72,3 +72,7 @@ cubic.bezier.com - custom geometric transitions using bezier curves (linear vs b
 
 //animations
 animate.style
+
+// animations when scrolling down
+aos animation (google it)
+https://github.com/michalsnik/aos
