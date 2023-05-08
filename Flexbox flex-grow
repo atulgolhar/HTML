@@ -68,3 +68,42 @@ body {
   /* flex-grow: 1; */
   order: 3;
 }
+
+
+====================
+
+.item {
+  flex-basis: 100px;
+  flex-grow: 1;
+  height: 100px;
+  background: #254de4;
+  color: #fff;
+  margin: 10px;
+  float: left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* 
+.item:nth-of-type(1) {
+  flex-grow: 3;
+  flex-basis:500px;
+  order: 1;
+}
+
+.item:nth-of-type(2) {
+  flex-grow: 1;
+  order: 2;
+}
+
+.item:nth-of-type(3) {
+  flex-grow: 1;
+  order: 3;
+} */
+
+
+
