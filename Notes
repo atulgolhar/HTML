@@ -80,3 +80,67 @@ https://github.com/michalsnik/aos
 // HTML and CSS Validation
 https://validator.w3.org/
 https://jigsaw.w3.org/css-validator/
+
+=====================================
+
+Flexbox Crash Course 2022
+from 0.01
+https://www.youtube.com/watch?v=3YW65K6LcIA
+
+two files index.html style.css
+create boilerplate
+give title
+bring in css with link tag
+in body Hello World
+open Live Server
+
+Use Emmet shortcuts
+need a div with class
+.flex-container
+
+need items
+.item*3{Item $}
+
+style css
+
+create universal selector
+box-sizing: border-box
+margin: 0			so just creating a reset to 0
+padding: 0			so just creating a reset to 0
+
+body font-family use Arial
+
+lets style the items and turn into boxes (easier to show examples this way)
+
+so now we have 3 boxes
+add details to the class .flex-container
+remember to create flex container need to add display property and set to flex for flex row
+add background light grey to see better
+
+now show life before flex blox
+comment out display flex
+now add float onto the item itself BUT if add h3 Hello after div closed 
+then that Hello is also part of the float (NOT WHAT WE WANT)
+so to FIX Hello sitting as part of the float we would need to add
+.flex-container::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+and this then puts Hello on line below 3 items.
+But in addition to adding this extra code, we didnt have access to any of the flex properties.
+so lets go back to display flex code
+delete html Hello line
+delete .flex-container::after
+un-comment display: flex line inside .flex-container block
+
+video 9.52 of 46.53
+
+get into very helpful alignment properties now
+use on the .flex-container and not on the items
+
+explain justify-content horizontally
+explain justify-content vertically
+explain just 1 of 3 boxes 			video 12.30 of 46.53
+
+
