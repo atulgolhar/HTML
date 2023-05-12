@@ -24,6 +24,9 @@
           <li>
             <a href="#vacation">Planning A Vacation</a>
           </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -152,80 +155,81 @@
         </section>
       </article>
       <hr />
+
       <article id="vacation">
         <h2>I Am Also Planning A Vacation</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
         <p>
           I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
         </p>
+
+        <section>
+          <h3>Places I'd Like To Visit 2023</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean.</p>
+              <figure>
+                <img
+                  src="img/caribbean.jpg"
+                  alt="Caribbean Beach"
+                  title="I want to visit a Caribbean Beach."
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+                <figcaption>Caribbean Beach Getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Margaritaville Island Reserve Riviera Cancun<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, Mexico 77580
+              </address>
+              <figure>
+                <img
+                  src="img/vacation.jpg"
+                  alt="Cancun Vaction"
+                  title="It's 5 o'Clock Somewhere!"
+                  width="400"
+                  height="267"
+                  loading="lazy"
+                />
+                <figcaption>A Caribbean Vacation Image</figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="img/BeachImage2.jpg"
+                  alt="Cancun Vaction2"
+                  title="It's 2 o'Clock Somewhere!"
+                  width="400"
+                  height="267"
+                  loading="lazy"
+                />
+                <figcaption>A Different Beach Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <p>Anywhere cold. <strong>No way!</strong></p>
+          <hr />
+        </section>
+        <!-- TO DO: add more places -->
+        <section>
+          <h3>Places I Want To Avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
+        </section>
       </article>
-
-      <section>
-        <h3>Places I'd Like To Visit 2023</h3>
-        <ul>
-          <li>
-            <p>I've heard good things about the Caribbean.</p>
-            <figure>
-              <img
-                src="img/caribbean.jpg"
-                alt="Caribbean Beach"
-                title="I want to visit a Caribbean Beach."
-                width="400"
-                height="225"
-                loading="lazy"
-              />
-              <figcaption>Caribbean Beach Getaway</figcaption>
-            </figure>
-          </li>
-          <li>
-            <p>I've heard good things about going here:</p>
-            <address>
-              Margaritaville Island Reserve Riviera Cancun<br />
-              Bahia Petempich Puerto Morelos, Mexico<br />
-              Colonia Morelos, Mexico 77580
-            </address>
-            <figure>
-              <img
-                src="img/vacation.jpg"
-                alt="Cancun Vaction"
-                title="It's 5 o'Clock Somewhere!"
-                width="400"
-                height="267"
-                loading="lazy"
-              />
-              <figcaption>A Caribbean Vacation Image</figcaption>
-            </figure>
-
-            <figure>
-              <img
-                src="img/BeachImage2.jpg"
-                alt="Cancun Vaction2"
-                title="It's 2 o'Clock Somewhere!"
-                width="400"
-                height="267"
-                loading="lazy"
-              />
-              <figcaption>A Different Beach Image</figcaption>
-            </figure>
-          </li>
-        </ul>
-        <p>Anywhere cold. <strong>No way!</strong></p>
-        <hr />
-      </section>
-      <!-- TO DO: add more places -->
-      <section>
-        <h3>Places I Want To Avoid</h3>
-        <dl>
-          <dt>North Pole</dt>
-          <dd>I hear this is <strong>cold</strong>!</dd>
-
-          <dt>South Pole</dt>
-          <dd>This is also cold.</dd>
-
-          <dt>Mountain Tops</dt>
-          <dd>These are also cold.</dd>
-        </dl>
-      </section>
     </main>
     <hr />
     <footer>
