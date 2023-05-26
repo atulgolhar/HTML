@@ -1,1 +1,111 @@
 tbd
+
+CSS
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  padding: 10%;                                     /* default */
+  font-size: 2rem;                                  /* default */
+  font-family: font-family: 'Roboto', sans-serif;   /* default */
+
+
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color:blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover, a:focus {
+  color:dodgerblue;
+}
+
+a:active {
+  color: red;
+}
+
+
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Styling Links</title>
+    <link rel="icon" href="html5.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Styling Links_3.49pm</h1>
+    </header>
+    <main>
+      <p>
+        Welcome to my page about
+        <a href="https://www.google.com/search?q=+web+links">cool web links</a>.
+      </p>
+      <p>Actually...This isn&apos;t a good search phrase.</p>
+      <p>
+        Let's search for
+        <a href="https://www.google.com/search?q=hypertext+links">hypertext</a>
+        links instead.
+      </p>
+      <p>I created page one with info about <a href="one.html">tennis</a>.</p>
+      <p>
+        I created page two with info about <a href="two.html">JavaScript</a>.
+      </p>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+one.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page One</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>Page One</h1>
+  </body>
+</html>
+
+
+
+
+two.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Two</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>Page Two</h1>
+  </body>
+</html>
+
