@@ -1,1 +1,203 @@
-tbd
+(1:11:56) ======Chapter 5: Box Model=======================================================
+Everything in CSS is a Box
+Learn to turn box into a circle
+
+style.css is mostly empty. Start with this
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <link rel="icon" href="html5.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Box Model</h1>
+    </header>
+    <article>
+      <main>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+          eius omnis natus optio minus obcaecati harum sit asperiores voluptatem
+          nulla, quod, nostrum, fugiat quis laborum totam quas aliquam! Magnam,
+          aperiam?
+        </p>
+      </main>
+    </article>
+  </body>
+</html>
+
+
+h1 {
+  border: 2px dashed red;
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+
+DevTools Box model inside Computed tab		MEMORIZE margin>border>padding>content
+							 content>padding>border>margin
+DevTools Styles user agent stylesheet
+margin-block-start: 0.67em;
+	font-size: 3rem;		old
+	font-size: 2rem;		change to this
+Changes like this are hard to keep track of. Thus need to CSS Reset
+* {
+  margin: 0;
+  padding: 0;	
+  box-sizing: content-box;		set width to 400px but not able to tell
+}
+
+
+change box-sizing: border-box 		note content width now 365 and not 400
+thus we can add 16px 16px 1.2px 1.2px to sum to 400
+So what does border-box do? helps to calculate the sizes that we are assigning.
+Margin is not included in the calculation.
+
+Lets style the page now with some properties. Lets make some changes.
+
+h1 {
+  border: 2px dashed red;
+  width: 400px;
+  padding: 0.5em;
+}
+
+Change h1 to header
+Change padding from 0.5em to 1.5em
+But how to provide these settings for many boxes? Use a .container class!!!
+
+header {				change to	.container {
+  border: 2px dashed red;
+  width: 400px;
+  padding: 1.5em;
+}
+
+Now to go html and set a .container class
+And change 
+<header>
+<main>
+
+to
+
+<header class="container">
+<main class="container">
+
+Thus renders red boxes around both content boxes in rendered web page.
+
+Add font-size: 1.5rem		no real change
+Add margin: 1.5rem		this pushes the text away from the edge of the box
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px dashed red;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  padding: 1.5em;
+}
+
+margin: 1.5rem;				old
+padding: 1.5rem;			old
+
+margin: 1em;				change to this  - this gives us more padding
+padding: 1em;				change to this
+
+change margin 1 to 1.5em
+add 
+  margin-top: 1.5em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+
+shorthand this
+margin: 1.5em 2em 2em;
+or could go with
+margin: 1.5em 2em 3em 4em;
+
+change margin back to 
+margin: 1.5em;
+and change all the paddings 	padding: 1.5em 2em 3em 4em;		v01.27.37
+}
+Use DevTools to see Elements, Computed main class container
+
+Back to normal look
+.container {
+  border: dashed red;
+  font-size: 1.5rem;
+  margin: 1.5em;
+  /*  margin-top: 1.5em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em; */
+  padding: 1.5em;
+}
+
+
+
+.container {
+  border: dashed red;
+  border-top-color: blue;
+  border-right: 10px dotted blue;
+  font-size: 1.5rem;
+  margin: 1.5em;
+  /*  margin-top: 1.5em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em; */
+  padding: 1.5em;
+}
+
+now have two containers with equal padding and margin
+border-top: 5px solid;
+change to
+border-top: 5px solid green;
+border-right: 10px dotted blue;
+
+border-top-width;
+border-top-color;
+border-top-style: ridge;
+border: 2px outset red;
+border: 2px double red;
+border: 10px double red;
+
+outline: 5px solid purple;			v01.32.19
+outline-offset: 5px;
+outline-offset: -10px;
+outline-offset: -20px;
+
+
+Box to Circle
+add to body tag and this is all it is in html:
+<div class="circle"></div>
+
+now lets start with circle class
+.circle {
+}
+
+
+.circle {
+  background-color: gold;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  outline: 2px solid red;
+  outline-offset: 0.25rem;
+}
+
+add margin: 3rem auto; 			above background-color
+this will center horizontally
+
+  border-radius: 20px;			square with rounded corners 
+
+  border-radius: 50px;			this is a circle
+
