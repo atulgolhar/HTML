@@ -8,12 +8,15 @@
   </head>
 
   <body>
-    <div class="block">Float</div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-      obcaecati consequatur, ullam ad velit at accusantium sapiente quam
-      accusamus neque?
-    </p>
+    <section>
+      <div class="block left">Float</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        obcaecati?
+      </p>
+    </section>
+
+    <div class="clear"></div>
     <p>
       Eveniet tempore aspernatur ipsam quisquam esse enim exercitationem quos
       possimus, illo asperiores accusantium vitae sapiente? Non, voluptatibus
@@ -23,6 +26,7 @@
       Itaque ullam nam, iure minima veritatis ab sint! Minima perferendis
       explicabo fugit ex tempora ut a voluptate voluptas nemo itaque.
     </p>
+    <div class="block right">Float</div>
     <p>
       Esse ad, tenetur exercitationem ex accusamus illum perspiciatis nam sequi
       unde quidem molestias suscipit architecto voluptatibus fugiat harum
@@ -39,7 +43,6 @@
 
 
 
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
@@ -51,4 +54,27 @@ body {
   width: 30vw;
   height: 30vw;
   background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.clear {
+  clear: both;
+}
+
+section {
+  background-color: bisque;
+  border: 1px solid #333;
+  padding: 1rem;
+  display: flow-root;
 }
