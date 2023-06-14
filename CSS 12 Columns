@@ -1,1 +1,85 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Columns</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="columns">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint culpa
+        voluptatem iste nulla veritatis, sunt earum soluta architecto obcaecati
+        atque!
+      </p>
+      <p>
+        Eligendi ipsum at ratione? Veniam, dolorem. Dolorum, explicabo! Quisquam
+        veniam dignissimos quasi sed repudiandae neque tempora! Tenetur repellat
+        commodi animi!
+      </p>
+      <!--       <h2>Next Topic</h2> -->
+      <p class="quote">&#8220;Where's my rug, man?&#8221;<span class="nowrap"> &#8212;The Dude</span></p>
+      <p>
+        Porro saepe error, quae nesciunt perferendis nemo hic quaerat vitae
+        tenetur, voluptatem exercitationem ducimus velit, accusamus assumenda
+        nostrum. Provident, excepturi!
+      </p>
+      <p>
+        Maxime quas pariatur unde vero sed! Veritatis labore totam animi
+        nesciunt ullam praesentium, harum laudantium ratione repellendus maiores
+        blanditiis dignissimos!
+      </p>
+    </section>
+    <p>
+      Enim esse ducimus eligendi, laboriosam inventore praesentium ipsam placeat
+      qui nihil sunt veniam libero voluptates repellat natus quis ad! Excepturi.
+    </p>
+  </body>
+</html>
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.columns {
+  /*   column-count: 4;
+  column-width: 250px; */
+  columns: 4 250px;
+  column-rule: 3px solid #333;
+  column-gap: 3rem;
+}
+
+.columns p {
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  break-inside: avoid;
+  break-before: column;
+}
+
+.columns .quote {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  column-span: all;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
