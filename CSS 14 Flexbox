@@ -23,6 +23,7 @@
 
 
 
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -43,8 +44,10 @@ body {
   margin-inline: auto;
   border: 1px solid #000;
   display: flex;
-  /* gap: 1rem; */
-  justify-content: space-between;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .box {
@@ -55,3 +58,4 @@ body {
   font-size: 2rem;
   padding: 0.5rem;
 }
+
