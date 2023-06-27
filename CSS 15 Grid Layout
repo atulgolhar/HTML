@@ -41,10 +41,17 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+
+  display grid;
 }
+
+
+
+
 
 .container {
   min-height: 400px;
