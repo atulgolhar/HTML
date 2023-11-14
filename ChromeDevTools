@@ -1,0 +1,22 @@
+Chrome DevTools
+
+Mizuxe website
+// https://gaurav-js-dev.github.io/mizuxe/#home
+
+Cntl Shift I or J or F12	// Elements, Console, Sources, Network, Application
+
+Device Icons 
+Elements HTML, Styles CSS
+Using h1 with Toggling CSS to see effect of that CSS .cls element
+Hide html elements to determine or change the structure/look (gray circle)
+Elements, identify an element, add CSS class
+Bootstap CSS file prefills text boxes when typing new classes
+Can change colors using color picker, eye dropper tool
+Can change numeric values
+Can add new styles
+HTML section id showcase then CSS Computed tabs gives Box Model info
+Also gives specific styles for the image
+CSS :hov styles
+
+
+
